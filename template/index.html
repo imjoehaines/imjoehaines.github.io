@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+    <title>{{> header }}</title>
+    <link rel="stylesheet" type="text/css" href="assets/marx.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="site-header">
+            <a class="site-header-text" href="./index.html">{{> header }}</a>
+        </header>
+
+        <section class="content">
+            {{#if index}}
+                <h1>Hi!</h1>
+                <p>I'm Joe Haines, a software developer at <a href="http://www.mayden.co.uk/">Mayden</a> where I work on <a href="http://www.iaptus.co.uk/">IAPTus</a>, a patient management and reporting solution for psychological therapists. This is my personal website which is basically just a collection of my GitHub repos & their readmes.</p>
+                <p>You can find me on <a href="https://github.com/imjoehaines">GitHub</a> and email me at <a href="mailto:hello@joehaines.co.uk">hello@joehaines.co.uk</a></p>
+
+                <h2 class="toc">Projects</h2>
+                <ul class="toc-list">
+                    {{#index}}
+                        <li><a href="{{ href }}">{{ name }}</a></li>
+                    {{/index}}
+                </ul>
+            {{/if}}
+
+            {{{ content }}}
+
+            {{#if previous}}
+                <a class="lastp navlink" href="{{ previous }}.html">Previous: {{ previous }}</a>
+            {{ else }}
+                <div class="lastp navlink"></div>
+            {{/if}}
+
+            {{#if next}}
+                <a class="nextp navlink" href="{{ next }}.html">Next: {{ next }}</a>
+            {{ else }}
+                <div class="nextp navlink"></div>
+            {{/if}}
+        </section>
+
+        <footer class="site-footer">
+            {{> footer }}
+        </footer>
+    </div>
+</body>
+</html>
