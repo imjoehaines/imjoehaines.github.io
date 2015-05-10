@@ -1,0 +1,1 @@
+../submarine/bin/submarine.js in . --template="template/index.html" --assets="template/assets" --header='Joe Haines' --footer='<a href="https://github.com/imjoehaines">My GitHub</a> | <a href="mailto:hello@joehaines.co.uk">Email me!</a>'
