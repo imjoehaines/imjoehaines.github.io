@@ -4,5 +4,4 @@ Posivity was an excuse to play with [Jasmine](http://jasmine.github.io/) and var
 
 It puts a positive message over a random image, like so:
 
-[![posivity](http://i.imgur.com/I89LQwd.jpg)](http://imjoehaines.github.io/posivity/)
-
+[![posivity](assets/img/posivity.png)](http://imjoehaines.github.io/posivity/)
